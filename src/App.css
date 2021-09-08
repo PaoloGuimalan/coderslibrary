@@ -16,7 +16,6 @@
   width: 100%;
   color: white;
   background-color: black;
-  margin: 0;
   position: absolute;
 }
 
@@ -47,7 +46,7 @@
 
 #tbl_medias{
   padding-left: 10vw;
-  width: 300px;
+  width: 400px;
   margin-bottom: 50px;
 }
 

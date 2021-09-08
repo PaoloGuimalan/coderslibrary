@@ -46,9 +46,9 @@ function App() {
                 </tr>
                 <tr>
                   <td>
-                    <p className='footer_p'>About</p>
-                    <p className='footer_p'>Contact</p>
-                    <p className='footer_p'>Developers</p>
+                    <Link to='/about' className='links'><p className='footer_p'>About</p></Link>
+                    <Link to='/about' className='links'><p className='footer_p'>Contact</p></Link>
+                    <Link to='/about' className='links'><p className='footer_p'>Developers</p></Link>
                   </td>
                 </tr>
               </tbody>
