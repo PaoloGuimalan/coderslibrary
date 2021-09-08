@@ -1,7 +1,8 @@
 .App {
   margin: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  padding: 0;
 }
 
 #header_all
@@ -16,7 +17,11 @@
   width: 100%;
   color: white;
   background-color: black;
-  position: absolute;
+  /*position: absolute;*/
+  clear: both; 
+  position: relative;
+  margin-bottom: -10%;
+  padding-bottom: 1%;
 }
 
 #ul_start2
