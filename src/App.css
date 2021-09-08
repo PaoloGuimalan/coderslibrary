@@ -50,6 +50,24 @@
   margin-bottom: 50px;
 }
 
+#tbl_disclaimer{
+  padding-left: 10vw;
+  margin-bottom: 50px;
+}
+
+#label_f_u{
+  font-size: 17px;
+  font-family: 'Staatliches', cursive;
+}
+
+#label_f_c{
+  font-size: 15px;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  width: 350px;
+}
+
 #copyright{
   font-size: 15px;
   font-family: 'Comfortaa', cursive;

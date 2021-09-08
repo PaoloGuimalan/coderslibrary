@@ -73,6 +73,18 @@ function App() {
               </tbody>
             </table>
           </li>
+          <li>
+            <table id='tbl_disclaimer'>
+              <tbody>
+                <tr>
+                  <td>
+                    <p id='label_f_u'>CONTENT DISCLAIMER:</p>
+                    <p id='label_f_c'>The resources found in this website is not owned by the team. Our main purpose is to share books and learning materials for our fellow learners and not to presume of owning these resources. We cannot promise full information about our resources but all we can give is a proper credential for the author / publisher of the books.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
         </ul>
         <hr id='hr_footer'></hr>
         <p id='copyright'>© Coder's Library 2021</p>
