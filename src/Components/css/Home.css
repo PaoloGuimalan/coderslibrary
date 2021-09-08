@@ -1,0 +1,60 @@
+#home_div{
+    width: 100%;
+}
+
+#tbl_home{
+    margin-top: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wc_label{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#handler_tr{
+    height: 10px;
+}
+
+#wc_label2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#img_handler
+{
+    height: 220px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.parags{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    width: 80%;
+    margin: 0px auto 30px auto;
+}
+
+#browse_btn{
+    background-color: black;
+    color: white;
+    width: 170px;
+    height: 30px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
