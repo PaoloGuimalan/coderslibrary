@@ -1,7 +1,7 @@
 .App {
   margin: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 #header_all
@@ -46,7 +46,7 @@
 
 #tbl_medias{
   padding-left: 10vw;
-  width: 400px;
+  width: 100%;
   margin-bottom: 50px;
 }
 
