@@ -37,7 +37,22 @@ function App() {
       <footer id='footer_all'>
         <ul id='ul_start2'>
           <li>
-            Hello
+            <table id='tbl_under_f'>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>The Team</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p className='footer_p'>About</p>
+                    <p className='footer_p'>Contact</p>
+                    <p className='footer_p'>Developers</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </li>
         </ul>
         <hr id='hr_footer'></hr>

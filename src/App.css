@@ -35,6 +35,14 @@
   width: 95%;
 }
 
+.footer_p{
+  font-size: 15px;
+}
+
+#tbl_under_f{
+  padding-left: 10vw;
+}
+
 #copyright{
   font-size: 15px;
   font-family: 'Comfortaa', cursive;
