@@ -29,8 +29,8 @@
 
 #img_handler
 {
-    height: 220px;
-    width: 400px;
+    height: 40%;
+    width: 80%;
     display: block;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -42,7 +42,7 @@
     font-size: 18px;
     font-weight: bold;
     text-align: justify;
-    width: 70%;
+    width: 80%;
     margin: 0px auto 30px auto;
 }
 
