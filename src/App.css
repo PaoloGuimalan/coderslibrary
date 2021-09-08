@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #hr_footer
@@ -39,19 +40,16 @@
 }
 
 #tbl_under_f{
-  padding-left: 10vw;
   width: 300px;
   margin-bottom: 50px;
 }
 
 #tbl_medias{
-  padding-left: 10vw;
-  width: 340px;
+  width: 300px;
   margin-bottom: 50px;
 }
 
 #tbl_disclaimer{
-  padding-left: 10vw;
   margin-bottom: 50px;
 }
 
