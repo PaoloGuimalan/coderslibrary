@@ -4,6 +4,8 @@ import { useState, useEffect} from 'react';
 import { BrowserRouter as Router, Link, Switch, Route} from 'react-router-dom';
 import Home from './Components/jsx/Home';
 import Books from './Components/jsx/Books';
+import About from './Components/jsx/About';
+import Donate from './Components/jsx/Donate';
 import logo from './Components/imgs/book_img.png'
 import {AnimatePresence, motion} from 'framer-motion';
 
@@ -31,6 +33,8 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/books' component={Books} />
+          <Route path='/about' component={About} />
+          <Route path='/donate' component={Donate} />
         </Switch>
       </AnimatePresence>
       
