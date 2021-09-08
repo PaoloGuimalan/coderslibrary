@@ -41,6 +41,14 @@
 
 #tbl_under_f{
   padding-left: 10vw;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+#tbl_medias{
+  padding-left: 10vw;
+  width: 300px;
+  margin-bottom: 50px;
 }
 
 #copyright{
@@ -106,4 +114,23 @@
   font-size: 25px;
   padding: 0px 30px 0px 30px;
   font-family: 'Comfortaa', cursive;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20px;
+  background: white;
+  color: black;
+}
+
+.head_foot{
+  font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Roboto', sans-serif;
 }

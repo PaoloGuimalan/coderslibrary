@@ -41,7 +41,7 @@ function App() {
               <tbody>
                 <tr>
                   <td>
-                    <p>The Team</p>
+                    <p className='head_foot'>The Team</p>
                   </td>
                 </tr>
                 <tr>
@@ -49,6 +49,25 @@ function App() {
                     <p className='footer_p'>About</p>
                     <p className='footer_p'>Contact</p>
                     <p className='footer_p'>Developers</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </li>
+          <li>
+            <table id='tbl_medias'>
+              <tbody>
+                <tr>
+                  <td>
+                    <p className='head_foot'>Social Media</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a target='_blank' href="https://www.facebook.com/paulo.portesguimalan/" class="fa fa-facebook"></a>
+                    <a target='_blank' href="https://github.com/PaoloGuimalan" class="fa fa-github"></a>
+                    <a target='_blank' href="https://www.linkedin.com/in/john-paulo-ramil-guimalan-89029321a/" class="fa fa-linkedin"></a>
+                    <a target='_blank' href="mailto: pauloportes.guimalan187@gmail.com" class="fa fa-google"></a>
                   </td>
                 </tr>
               </tbody>
