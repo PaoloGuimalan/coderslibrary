@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/Home.css'
 import bookImg from '../imgs/book_img.png'
+import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
 
 function Home() {
     return (
@@ -28,7 +30,13 @@ function Home() {
                         </tr>
                         <tr>
                             <td>
-                                <button id='browse_btn'>BROWSE BOOKS</button>
+                                <Link to='/books' id='holder_link'>
+                                    <motion.button 
+                                    whileHover={{
+                                        scale: 1.1
+                                    }}
+                                    id='browse_btn'>BROWSE BOOKS</motion.button>
+                                </Link>
                             </td>
                         </tr>
                     </tbody>

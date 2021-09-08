@@ -1,5 +1,6 @@
 #home_div{
     width: 100%;
+    height: 100%;
 }
 
 #tbl_home{
@@ -56,4 +57,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+
+#holder_link{
+    text-decoration: none;
 }
