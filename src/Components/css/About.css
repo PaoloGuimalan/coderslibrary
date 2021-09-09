@@ -3,3 +3,25 @@
     width: 100%;
     background-color: white;
 }
+
+#label_about{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 40px;
+}
+
+.ab_parags{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    width: 80%;
+    margin: 0px auto 30px auto;
+}
+
+#div_sec_ab{
+    padding-bottom: 100px;
+    background: white;
+}
