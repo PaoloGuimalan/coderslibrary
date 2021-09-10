@@ -21,7 +21,7 @@ function App() {
           <li id='li_main'>
             <ul id='ul_start2'>
               <li className='li_under'><Link to='/' className='links'><p>Home</p></Link></li>
-              <li className='li_under'><Link to='/books' className='links'><p>Books</p></Link></li>
+              <li className='li_under'><Link to='/books?book_id=0' className='links'><p>Books</p></Link></li>
               <li className='li_under'><Link to='/about' className='links'><p>About</p></Link></li>
               <li className='li_under'><Link to='/donate' className='links'><p>Buy us a Coffee</p></Link></li>
             </ul>

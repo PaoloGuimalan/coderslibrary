@@ -76,6 +76,7 @@
     font-size: 18px;
     font-family: 'Comfortaa', cursive;
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 .val_handler{
@@ -84,6 +85,7 @@
     font-size: 17px;
     font-weight: 600;
     cursor: pointer;
+    user-select:none;
 }
 
 .val2_holder{
@@ -93,4 +95,9 @@
 
 .tbls_result{
     display: none;
+}
+
+.links_books{
+    text-decoration: none;
+    color: black;
 }

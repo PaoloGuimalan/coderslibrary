@@ -3,13 +3,24 @@ import '../css/Books.css'
 import Book from '../imgs/book.png';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import datamain from '../../Data/data_values';
 
 function Books() {
 
     const [sidep, setsidep] = useState(false);
     const [setter, setsetter] = useState(true);
+    const [id, setid] = useState(0);
+
+    const parameter = () => {
+        let url = new URLSearchParams(window.location.search);
+        return url.get("book_id");
+    }
+
+    useEffect(() => {
+        //alert(parameter());
+        setid(parameter());
+    })
 
     const unset = (nm) => {
         //alert(nm);
@@ -69,7 +80,7 @@ function Books() {
                                                 if(val == val2.category)
                                                 {
                                                     //console.log(val2.name);
-                                                    return <p className='val2_holder'>{val2.name}</p>
+                                                    return <Link to={`/books?book_id=${val2.id}`} className='links_books'><p className='val2_holder'>{val2.name}</p></Link>
                                                 }
                                             })}</table></p>
                                         }</p>
@@ -80,8 +91,8 @@ function Books() {
                     </motion.table>
                 </motion.div>
 
-                
-                <table className='tbl_prev'>
+                {id == 0 || null ? (
+                    <table className='tbl_prev'>
                     <tbody>
                         <tr>
                             <td>
@@ -109,6 +120,23 @@ function Books() {
                         </tr>
                     </tbody>
                 </table>
+                ):(
+                    <table className='tbl_prev'>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    {datamain.books.map((stat) => {
+                                        if(stat.id == id)
+                                        {
+                                            return <center><p>{stat.name}</p></center>
+                                        }
+                                    })}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                )}
+                
             </div>
         </div>
     )
