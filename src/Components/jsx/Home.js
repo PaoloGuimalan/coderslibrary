@@ -38,7 +38,7 @@ function Home() {
                         </tr>
                         <tr>
                             <td>
-                                <Link to='/books' id='holder_link'>
+                                <Link to='/books?book_id=0' id='holder_link'>
                                     <motion.button 
                                     whileHover={{
                                         scale: 1.1
