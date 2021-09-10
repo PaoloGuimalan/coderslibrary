@@ -14,7 +14,8 @@ function Books() {
             <div id='preview'>
                 <motion.div 
                     animate={{
-                        width: window.innerWidth < 768 ? sidep == false ? "50px" : "100%" : sidep == false ? "50px" : "20%"
+                        width: window.innerWidth < 768 ? sidep == false ? "50px" : "100%" : sidep == false ? "50px" : "20%",
+                        height: window.innerWidth < 768 ? sidep == false ? "50px" : "100%" : sidep == false ? "100%" : "100%"
                     }}
                 id='sidepanel'>
                     <motion.button 
