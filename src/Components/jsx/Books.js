@@ -142,8 +142,10 @@ function Books() {
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <p className='p_res'><b>Publisher:</b> {stat.publisher}</p>
-                                                            <p className='p_res'><b>Author:</b> {stat.author}</p>
+                                                            <p className='p_res'><b>Publisher:</b></p>
+                                                            <p className='p_res'>{stat.publisher}</p>
+                                                            <p className='p_res'><b>Author:</b></p>
+                                                            <p className='p_res'>{stat.author}</p>
                                                         </td>
                                                     </tr>
                                                     <tr>
