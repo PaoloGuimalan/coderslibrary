@@ -13,6 +13,12 @@ function App() {
 
   //const [state, setstate] = useState("Hello");
 
+  const text_var = {
+      animate:{
+        fontSize: window.innerWidth < 768 ? "15px" : "18px"
+      }
+  };
+
   return (
     <div className="App">
       <header id='header_all'>
@@ -20,10 +26,10 @@ function App() {
           <li id='li_main'><p id='head_label'>Coder's Library<img id='img_logo' src={logo}></img></p></li>
           <li id='li_main'>
             <ul id='ul_start2'>
-              <li className='li_under'><Link to='/' className='links'><p>Home</p></Link></li>
-              <li className='li_under'><Link to='/books?book_id=0' className='links'><p>Books</p></Link></li>
-              <li className='li_under'><Link to='/about' className='links'><p>About</p></Link></li>
-              <li className='li_under'><Link to='/donate' className='links'><p>Buy us a Coffee</p></Link></li>
+              <motion.li className='li_under' variants={text_var} animate='animate'><Link to='/' className='links'><p>Home</p></Link></motion.li>
+              <motion.li className='li_under' variants={text_var} animate='animate'><Link to='/books?book_id=0' className='links'><p>Books</p></Link></motion.li>
+              <motion.li className='li_under' variants={text_var} animate='animate'><Link to='/about' className='links'><p>About</p></Link></motion.li>
+              <motion.li className='li_under' variants={text_var} animate='animate'><Link to='/donate' className='links'><p>Buy us a Coffee</p></Link></motion.li>
             </ul>
           </li>
         </ul>
