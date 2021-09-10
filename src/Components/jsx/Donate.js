@@ -18,7 +18,7 @@ function Donate() {
                 <center><p><b>Account Number:</b> 09275508232</p></center>
             </div>
             <div>
-                <p id='label_donate_foot'>Thank You for your support! :></p>
+                <p id='label_donate_foot'>Thank You for your support! :&gt;</p>
             </div>
         </div>
     )
