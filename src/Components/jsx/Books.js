@@ -29,13 +29,26 @@ function Books() {
                     <tbody>
                         <tr>
                             <td>
-                                <p id='prev_label'>Select a Book!</p>
+                                <motion.p 
+                                    animate={{
+                                        fontSize: window.innerWidth < 768 ? "20px" : "30px"
+                                    }}
+                                id='prev_label'>Select a Book!</motion.p>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <img src={Book} id='book_logo'></img>
-                                <p id='note'>Use the sidepanel to navigate categories</p>
+                                <motion.img 
+                                    animate={{
+                                        width: window.innerWidth < 768 ? "200px" : "300px",
+                                        height: window.innerWidth < 768 ? "160px" : "230px"
+                                    }}
+                                src={Book} id='book_logo'></motion.img>
+                                <motion.p
+                                    animate={{
+                                        fontSize: window.innerWidth < 768 ? "15px" : "20px"
+                                    }}
+                                 id='note'>Use the sidepanel to navigate categories</motion.p>
                             </td>
                         </tr>
                     </tbody>
