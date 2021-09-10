@@ -18,7 +18,15 @@ function Home() {
                         </tr>
                         <tr>
                             <td>
-                                <img id='img_handler' src={bookImg}></img>
+                                <motion.img 
+                                    animate={{
+                                        rotate: 720,
+                                        transition:{
+                                            delay: 0.3,
+                                            duration: 1
+                                        }
+                                    }}
+                                id='img_handler' src={bookImg}></motion.img>
                             </td>
                         </tr>
                         <tr>
