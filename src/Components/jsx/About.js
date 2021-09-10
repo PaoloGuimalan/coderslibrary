@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/About.css'
 import Dev1 from '../imgs/pr_me.jpg';
+import {motion} from 'framer-motion';
 
 function About() {
     return (
@@ -28,8 +29,16 @@ function About() {
                                     </li>
                                     <li>
                                         <p id='dev_name'><b>John Paulo Ramil Guimalan</b></p>
-                                        <a id='dev_name' href='mailto: pauloportes.guimalan187@gmail.com'>pauloportes.guimalan187@gmail.com</a><br></br>
-                                        <button id='dev_btn'>Visit My Website</button>
+                                        <motion.a 
+                                            animate={{
+                                                fontSize: window.innerWidth < 768 ? "15px" : "18px"
+                                            }}
+                                        id='dev_name' href='mailto: pauloportes.guimalan187@gmail.com'>pauloportes.guimalan187@gmail.com</motion.a><br></br>
+                                        <motion.button 
+                                            whileHover={{
+                                                scale: 1.1
+                                            }}
+                                        id='dev_btn'><a id='links' href='https://hardcore-saha-a3f79b.netlify.app/' target='_blank'>Visit My Website</a></motion.button>
                                     </li>
                                 </ul>
                             </td>

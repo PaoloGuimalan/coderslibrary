@@ -62,6 +62,13 @@
     background: black;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+}
+
+#links{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
 }
 
 #ul_dev{
