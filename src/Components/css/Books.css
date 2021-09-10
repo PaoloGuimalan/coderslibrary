@@ -3,3 +3,62 @@
     height: 100%;
     background-color: white;
 }
+
+#sidepanel{
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    height: 100%;
+    width: 50px;
+    position: absolute;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+}
+
+#btn_panel{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#preview{
+    height: 90vh;
+    width: 100%;
+}
+
+.tbl_prev{
+    width: 100%;
+    padding-top: 40px;
+}
+
+#prev_label{
+    font-size: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: grey;
+}
+
+#note{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: grey;
+}
+
+#book_logo{
+    width: 300px;
+    height: 230px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
