@@ -33,7 +33,7 @@
 
 .tbl_prev{
     width: 100%;
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 #prev_label{
@@ -100,4 +100,52 @@
 .links_books{
     text-decoration: none;
     color: black;
+}
+
+#result_tbl_val{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#result_tbl_val_lbl{
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+#result_tbl_val_img{
+    width: 250px;
+    height: 300px;
+    display: block;
+}
+
+.result_tbl_val_btns{
+    height: 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#don_res{
+    background-color: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#don_res:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+#dl_res{
+    background-color: green;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#dl_res:hover{
+    box-shadow: 0px 0px 10px black;
 }

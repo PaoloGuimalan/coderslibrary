@@ -128,7 +128,26 @@ function Books() {
                                     {datamain.books.map((stat) => {
                                         if(stat.id == id)
                                         {
-                                            return <center><p>{stat.name}</p></center>
+                                            return <table id='result_tbl_val'>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <p id='result_tbl_val_lbl'>{stat.name}</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img id='result_tbl_val_img'></img>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <button className='result_tbl_val_btns' id='dl_res'>Download</button>
+                                                            <button className='result_tbl_val_btns' id='don_res'>Buy us a Coffee</button>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         }
                                     })}
                                 </td>
