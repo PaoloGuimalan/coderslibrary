@@ -143,9 +143,24 @@
     background-color: green;
     border: none;
     color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#dl_res_a{
+    background-color: green;
+    border: none;
+    color: white;
+    text-decoration: none;
     cursor: pointer;
 }
 
 #dl_res:hover{
     box-shadow: 0px 0px 10px black;
+}
+
+.p_res{
+    font-size: 15px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
 }

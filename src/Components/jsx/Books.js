@@ -137,13 +137,19 @@ function Books() {
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <img id='result_tbl_val_img'></img>
+                                                            <img id='result_tbl_val_img' src={stat.link_img}></img>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <button className='result_tbl_val_btns' id='dl_res'>Download</button>
-                                                            <button className='result_tbl_val_btns' id='don_res'>Buy us a Coffee</button>
+                                                            <p className='p_res'><b>Publisher:</b> {stat.publisher}</p>
+                                                            <p className='p_res'><b>Author:</b> {stat.author}</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <button className='result_tbl_val_btns' id='dl_res'><a id='dl_res_a' href={stat.link_dl} target='_blank'>Download</a></button>
+                                                            <Link to='/donate'><button className='result_tbl_val_btns' id='don_res'>Buy us a Coffee</button></Link>
                                                         </td>
                                                     </tr>
                                                 </tbody>
