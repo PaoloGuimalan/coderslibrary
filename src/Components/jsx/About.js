@@ -25,7 +25,11 @@ function About() {
                             <td>
                                 <ul id='ul_dev'>
                                     <li>
-                                        <img id='dev_img' src={Dev1}></img>
+                                        <motion.img 
+                                            animate={{
+                                                marginRight: window.innerWidth  < 768 ? "0px" : "50px"
+                                            }}
+                                        id='dev_img' src={Dev1}></motion.img>
                                     </li>
                                     <li>
                                         <p id='dev_name'><b>John Paulo Ramil Guimalan</b></p>
@@ -42,6 +46,36 @@ function About() {
                                     </li>
                                 </ul>
                             </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id='cont_tbl'>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p id='lbl_cont'>Contacts</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul id='ul_cont'>
+                                    <li>
+                                        <a target='_blank' href="https://www.facebook.com/paulo.portesguimalan/" class="fa fa-facebook" id='fafa'></a>
+                                    </li>
+                                    <li>
+                                        <a target='_blank' href="https://github.com/PaoloGuimalan" class="fa fa-github" id='fafa'></a>
+                                    </li>
+                                    <li>
+                                         <a target='_blank' href="https://www.linkedin.com/in/john-paulo-ramil-guimalan-89029321a/" class="fa fa-linkedin" id='fafa'></a>
+                                    </li>
+                                    <li>
+                                         <a target='_blank' href="mailto: pauloportes.guimalan187@gmail.com" class="fa fa-google" id='fafa'></a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><center><p><b>Contact Number:</b> +63 0927 550 8232</p></center></td>
                         </tr>
                     </tbody>
                 </table>

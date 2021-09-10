@@ -26,6 +26,18 @@
     background: white;
 }
 
+#cont_tbl{
+    width: 100%;
+    margin-top: 50px;
+}
+
+#lbl_cont{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
 #dev_tbl{
     width: 100%;
     margin-top: 50px;
@@ -43,7 +55,7 @@
     width: 150px;
     height: 150px;
     border-radius: 100%;
-    margin-right: 50px;
+    margin-right: 0px;
 }
 
 #dev_name{
@@ -80,5 +92,29 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding: 0;
     /*background-color: orange;*/
+}
+
+#ul_cont{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 50%;
+    /*background-color: orange;*/
+}
+
+#fafa{
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: white;
+    border-radius: 100px;
+    background: black;
+    margin: 10px
 }
