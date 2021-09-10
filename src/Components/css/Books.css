@@ -62,3 +62,35 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#tbl_cat{
+    margin-top: 60px;
+    opacity: 0;
+    width: 100%;
+    margin-bottom: 100px;
+    padding-left: 5px;
+}
+
+#label_cat{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.val_handler{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.val2_holder{
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.tbls_result{
+    display: none;
+}
