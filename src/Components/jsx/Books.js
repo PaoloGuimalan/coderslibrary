@@ -4,7 +4,6 @@ import Book from '../imgs/book.png';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {useState, useEffect} from 'react';
-import datamain from '../../Data/data_values';
 import Axios from 'axios';
 
 function Books() {
@@ -13,22 +12,26 @@ function Books() {
     const [setter, setsetter] = useState(true);
     const [id, setid] = useState(0);
 
+    const [datamain, setdatamain] = useState({categories:[],books:[]});
+
     const parameter = () => {
         let url = new URLSearchParams(window.location.search);
         return url.get("book_id");
     }
 
     const getter = () => {
-        /*Axios.get("https://firebasestorage.googleapis.com/v0/b/coderslibrary-d2244.appspot.com/o/json%2Fdata_books.json?alt=media&token=1fa0f5b4-959f-4f9e-a85e-a902c0b82d63").then((response) => {
-            console.log(response);
-        });*/
+        Axios.get("https://data-books.herokuapp.com/fetch").then((response) => {
+            var dat_res = response.data;
+            setdatamain(dat_res);
+            //console.log(datamain2);
+        });
     }
 
     useEffect(() => {
         //alert(parameter());
         setid(parameter());
-        //getter();
-    })
+        getter();
+    }, [datamain]);
 
     const unset = (nm) => {
         //alert(nm);
