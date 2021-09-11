@@ -29,7 +29,7 @@ function Books() {
                 var dat_res = response.data;
                 setdatamain(dat_res);
                 setloader(false);
-                //console.log(datamain2);
+                console.log(dat_res.books);
             }
         }).catch((err) => {
             //console.log("Error!");
@@ -62,7 +62,7 @@ function Books() {
                 <motion.div 
                     animate={{
                         width: window.innerWidth < 768 ? sidep == false ? "50px" : "100%" : sidep == false ? "50px" : "20%",
-                        height: window.innerWidth < 768 ? sidep == false ? "50px" : "100%" : sidep == false ? "100%" : "100%",
+                        height: window.innerWidth < 768 ? sidep == false ? "50px" : "120vh" : sidep == false ? "120vh" : "120vh",
                         overflowY: sidep == false ? "hidden" : "scroll",
                         overflowX: sidep == false ? "hidden" : "hidden",
                         boxShadow: sidep == false ? "0px 0px 0px black" : "0px 0px 10px black",

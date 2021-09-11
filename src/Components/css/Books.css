@@ -6,7 +6,7 @@
 
 #sidepanel{
     background-color: white;
-    height: 0;
+    height: 120vh;
     width: 50px;
     position: absolute;
     border-top: solid 1px grey;
@@ -26,7 +26,7 @@
 }
 
 #preview{
-    height: 100vh;
+    height: 120vh;
     width: 100%;
 }
 
