@@ -165,7 +165,7 @@ function Books() {
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <embed id='result_tbl_val_img' style={{overflow: "hidden"}} src={stat.link_dl}></embed>
+                                                            <img id='result_tbl_val_img' style={{overflow: "hidden"}} src={stat.link_img}></img>
                                                         </td>
                                                     </tr>
                                                     <tr>
