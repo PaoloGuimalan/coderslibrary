@@ -29,7 +29,7 @@ function Books() {
                 var dat_res = response.data;
                 setdatamain(dat_res);
                 setloader(false);
-                console.log(dat_res.books);
+                //console.log(dat_res.books);
             }
         }).catch((err) => {
             //console.log("Error!");
