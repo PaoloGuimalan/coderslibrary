@@ -119,6 +119,8 @@
     width: 250px;
     height: 300px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .result_tbl_val_btns{
