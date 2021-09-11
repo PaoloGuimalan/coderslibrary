@@ -6,7 +6,6 @@
 
 #sidepanel{
     background-color: white;
-    box-shadow: 0px 0px 10px black;
     height: 0;
     width: 50px;
     position: absolute;
@@ -117,7 +116,7 @@
 
 #result_tbl_val_img{
     width: 250px;
-    height: 300px;
+    height: 355px;
     display: block;
     margin-left: auto;
     margin-right: auto;

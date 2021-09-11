@@ -65,6 +65,7 @@ function Books() {
                         height: window.innerWidth < 768 ? sidep == false ? "50px" : "100%" : sidep == false ? "100%" : "100%",
                         overflowY: sidep == false ? "hidden" : "scroll",
                         overflowX: sidep == false ? "hidden" : "hidden",
+                        boxShadow: sidep == false ? "0px 0px 0px black" : "0px 0px 10px black",
                         transition:{
                             delay: sidep == false ? 0.5 : 0
                         }
@@ -164,7 +165,7 @@ function Books() {
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <img id='result_tbl_val_img' src={stat.link_img}></img>
+                                                            <embed id='result_tbl_val_img' style={{overflow: "hidden"}} src={stat.link_dl}></embed>
                                                         </td>
                                                     </tr>
                                                     <tr>
