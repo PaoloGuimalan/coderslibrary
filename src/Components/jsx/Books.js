@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Books.css'
 import Book from '../imgs/book.png';
+import Loader_anm from './Loader';
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {useState, useEffect} from 'react';
@@ -14,6 +15,8 @@ function Books() {
 
     const [datamain, setdatamain] = useState({categories:[],books:[]});
 
+    const [loader, setloader] = useState(true);
+
     const parameter = () => {
         let url = new URLSearchParams(window.location.search);
         return url.get("book_id");
@@ -21,9 +24,16 @@ function Books() {
 
     const getter = () => {
         Axios.get("https://data-books.herokuapp.com/fetch").then((response) => {
-            var dat_res = response.data;
-            setdatamain(dat_res);
-            //console.log(datamain2);
+            if(response)
+            {
+                var dat_res = response.data;
+                setdatamain(dat_res);
+                setloader(false);
+                //console.log(datamain2);
+            }
+        }).catch((err) => {
+            //console.log("Error!");
+            setloader(true);
         });
     }
 
@@ -31,7 +41,7 @@ function Books() {
         //alert(parameter());
         setid(parameter());
         getter();
-    }, [datamain]);
+    });
 
     const unset = (nm) => {
         //alert(nm);
@@ -83,19 +93,25 @@ function Books() {
                             </tr>
                             <tr>
                                 <td>
-                                    {datamain.categories.map((val) => {
-                                        //console.log(val);
-                                        return <p>{<p><span className='val_handler' onClick={() => {unset(val)}}>{val}</span>
-                                        <table className='tbls_result' id={val}>{
-                                            datamain.books.map((val2) => {
-                                                if(val == val2.category)
-                                                {
-                                                    //console.log(val2.name);
-                                                    return <Link to={`/books?book_id=${val2.id}`} className='links_books'><p className='val2_holder'>{val2.name}</p></Link>
-                                                }
-                                            })}</table></p>
-                                        }</p>
-                                    })}
+                                    {loader == true ? (
+                                        <Loader_anm />
+                                    ):(
+                                        <div id='unloaded_div'>
+                                            {datamain.categories.map((val) => {
+                                            //console.log(val);
+                                            return <p>{<p><span className='val_handler' onClick={() => {unset(val)}}>{val}</span>
+                                            <table className='tbls_result' id={val}>{
+                                                datamain.books.map((val2) => {
+                                                    if(val == val2.category)
+                                                    {
+                                                        //console.log(val2.name);
+                                                        return <Link to={`/books?book_id=${val2.id}`} className='links_books'><p className='val2_holder'>{val2.name}</p></Link>
+                                                    }
+                                                })}</table></p>
+                                            }</p>
+                                            })}
+                                        </div>
+                                    )}
                                 </td>
                             </tr>
                         </tbody>
