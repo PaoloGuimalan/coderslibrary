@@ -124,9 +124,10 @@
 
 .result_tbl_val_btns{
     height: 30px;
+    width: 120px;
     font-size: 15px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin: 5px;
 }
 
 #don_res{
@@ -164,4 +165,5 @@
     font-size: 15px;
     font-family: 'Comfortaa', cursive;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }

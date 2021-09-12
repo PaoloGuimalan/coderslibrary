@@ -177,9 +177,10 @@ function Books() {
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>
+                                                        <td><center>
                                                             <button className='result_tbl_val_btns' id='dl_res'><a id='dl_res_a' href={stat.link_dl} target='_blank'>Download</a></button>
                                                             <Link to='/donate'><button className='result_tbl_val_btns' id='don_res'>Buy us a Coffee</button></Link>
+                                                            </center>
                                                         </td>
                                                     </tr>
                                                 </tbody>
