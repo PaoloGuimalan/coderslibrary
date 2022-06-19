@@ -23,7 +23,7 @@ function Books() {
     }
 
     const getter = () => {
-        Axios.get("https://data-books.herokuapp.com/fetch").then((response) => {
+        Axios.get("https://coderslibraryserver.herokuapp.com/allcontents").then((response) => {
             if(response)
             {
                 var dat_res = response.data;

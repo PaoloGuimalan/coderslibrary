@@ -42,7 +42,7 @@ function About() {
                                             whileHover={{
                                                 scale: 1.1
                                             }}
-                                        id='dev_btn'><a id='links' href='https://hardcore-saha-a3f79b.netlify.app/' target='_blank'>Visit My Website</a></motion.button>
+                                        id='dev_btn'><a id='links' href='https://paologuimalan.netlify.app/' target='_blank'>Visit My Website</a></motion.button>
                                     </li>
                                 </ul>
                             </td>
