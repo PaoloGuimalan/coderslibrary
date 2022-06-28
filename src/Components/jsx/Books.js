@@ -83,7 +83,7 @@ function Books() {
                 }
             })
         }
-    }, [id])
+    }, [id, datamain])
 
     useEffect(() => {
         //alert(parameter());
