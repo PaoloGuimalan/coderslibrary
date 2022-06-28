@@ -49,7 +49,23 @@ function Books() {
     }
 
     useEffect(() => {
-        document.title = "Coder's Library"
+        if(id != 0 || null){
+            datamain.books.map((stat) => {
+                if(stat.id == id){
+                    document.title = `${stat.name} | Coder's Library`
+                    setmeta({
+                        title: `${stat.name} | Coder's Library`,
+                        meta: {
+                            property: "og:title",
+                            content: `${stat.name} | Coder's Library`
+                        }
+                    })
+                }
+            })
+        }
+        else{
+            document.title = `Coder's Library`
+        }
     },[])
 
     useEffect(() => {
