@@ -12,7 +12,11 @@ function Home() {
     },[])
 
     const meta = {
-        title: "Coder's Library"
+        title: "Coder's Library",
+        meta: {
+            property: "og:title",
+            content: "Coder's Library"
+        }
     }
 
     return (

@@ -19,7 +19,11 @@ function Books() {
     const [loader, setloader] = useState(true);
 
     const metaState = {
-        title: "Coder's Library"
+        title: "Coder's Library",
+        meta: {
+            property: "og:title",
+            content: "Coder's Library"
+        }
     }
 
     const [meta, setmeta] = useState(metaState);
@@ -54,7 +58,11 @@ function Books() {
                 if(stat.id == id){
                     document.title = `${stat.name} | Coder's Library`
                     setmeta({
-                        title: `${stat.name} | Coder's Library`
+                        title: `${stat.name} | Coder's Library`,
+                        meta: {
+                            property: "og:title",
+                            content: `${stat.name} | Coder's Library`
+                        }
                     })
                 }
             })
