@@ -38,6 +38,20 @@ function Books() {
     }
 
     useEffect(() => {
+        document.title = "Coder's Library"
+    },[])
+
+    useEffect(() => {
+        if(id != 0 || null){
+            datamain.books.map((stat) => {
+                if(stat.id == id){
+                    document.title = `${stat.name} | Coder's Library`
+                }
+            })
+        }
+    }, [id])
+
+    useEffect(() => {
         //alert(parameter());
         setid(parameter());
         getter();

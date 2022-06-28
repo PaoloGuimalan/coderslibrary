@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import gcash from '../imgs/gcash.png';
 import paymaya from '../imgs/paymaya.png';
 import '../css/Donate.css'
 
 function Donate() {
+
+    useEffect(() => {
+        document.title = "Coder's Library"
+    },[])
+
     return (
         <div id='donate_div'>
             <div>

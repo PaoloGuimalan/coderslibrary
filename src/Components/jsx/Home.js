@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/Home.css'
 import bookImg from '../imgs/book_img.png'
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 
 function Home() {
+
+    useEffect(() => {
+        document.title = "Coder's Library"
+    },[])
+
     return (
         <div id='home_div'>
             <div>

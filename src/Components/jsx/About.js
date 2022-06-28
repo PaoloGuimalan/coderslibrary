@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/About.css'
 import Dev1 from '../imgs/pr_me.jpg';
 import {motion} from 'framer-motion';
 
 function About() {
+
+    useEffect(() => {
+        document.title = "Coder's Library"
+    },[])
+
     return (
         <div id='about_div'>
             <div>
