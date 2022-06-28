@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import gcash from '../imgs/gcash.png';
 import paymaya from '../imgs/paymaya.png';
 import '../css/Donate.css'
+import DocumentMeta from 'react-document-meta';
 
 function Donate() {
 
@@ -9,7 +10,12 @@ function Donate() {
         document.title = "Coder's Library"
     },[])
 
+    const meta = {
+        title: "Coder's Library"
+    }
+
     return (
+        <DocumentMeta {...meta}>
         <div id='donate_div'>
             <div>
                 <p id='label_donate'>You can donate at the following.</p>
@@ -26,6 +32,7 @@ function Donate() {
                 <p id='label_donate_foot'>Thank You for your support! :&gt;</p>
             </div>
         </div>
+        </DocumentMeta>
     )
 }
 

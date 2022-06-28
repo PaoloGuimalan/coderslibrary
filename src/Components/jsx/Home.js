@@ -3,6 +3,7 @@ import '../css/Home.css'
 import bookImg from '../imgs/book_img.png'
 import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
+import DocumentMeta from 'react-document-meta';
 
 function Home() {
 
@@ -10,8 +11,13 @@ function Home() {
         document.title = "Coder's Library"
     },[])
 
+    const meta = {
+        title: "Coder's Library"
+    }
+
     return (
-        <div id='home_div'>
+        <DocumentMeta {...meta}>
+            <div id='home_div'>
             <div>
                 <table id='tbl_home'>
                     <tbody>
@@ -56,6 +62,7 @@ function Home() {
                 </table>
             </div>
         </div>
+        </DocumentMeta>
     )
 }
 

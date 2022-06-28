@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {useState, useEffect} from 'react';
 import Axios from 'axios';
+import DocumentMeta from 'react-document-meta';
 
 function Books() {
 
@@ -16,6 +17,12 @@ function Books() {
     const [datamain, setdatamain] = useState({categories:[],books:[]});
 
     const [loader, setloader] = useState(true);
+
+    const metaState = {
+        title: "Coder's Library"
+    }
+
+    const [meta, setmeta] = useState(metaState);
 
     const parameter = () => {
         let url = new URLSearchParams(window.location.search);
@@ -46,6 +53,9 @@ function Books() {
             datamain.books.map((stat) => {
                 if(stat.id == id){
                     document.title = `${stat.name} | Coder's Library`
+                    setmeta({
+                        title: `${stat.name} | Coder's Library`
+                    })
                 }
             })
         }
@@ -71,7 +81,8 @@ function Books() {
     }
 
     return (
-        <div id='div_books'>
+        <DocumentMeta {...meta}>
+            <div id='div_books'>
             <div id='preview'>
                 <motion.div 
                     animate={{
@@ -209,6 +220,7 @@ function Books() {
                 
             </div>
         </div>
+        </DocumentMeta>
     )
 }
 

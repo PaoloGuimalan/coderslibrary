@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import '../css/About.css'
 import Dev1 from '../imgs/pr_me.jpg';
 import {motion} from 'framer-motion';
+import DocumentMeta from 'react-document-meta';
 
 function About() {
 
@@ -9,8 +10,13 @@ function About() {
         document.title = "Coder's Library"
     },[])
 
+    const meta = {
+        title: "Coder's Library"
+    }
+
     return (
-        <div id='about_div'>
+        <DocumentMeta {...meta}>
+            <div id='about_div'>
             <div>
                 <p id='label_about'>About Coder's Library</p>
             </div>
@@ -86,6 +92,7 @@ function About() {
                 </table>
             </div>
         </div>
+        </DocumentMeta>
     )
 }
 
