@@ -3,6 +3,7 @@ import '../css/About.css'
 import Dev1 from '../imgs/pr_me.jpg';
 import {motion} from 'framer-motion';
 import DocumentMeta from 'react-document-meta';
+import { Link } from 'react-router-dom'
 
 function About() {
 
@@ -29,6 +30,38 @@ function About() {
                 <p className='ab_parags'>Our project started in September 2021 and hopefully will become progressive. Coder's Library is here to help learners to attain resources/books that are needed for them to attain their best 
                 capacity in learning, specifically in Coding and Programming. Supporting our project will help us improve our services more and probably expand our platform to 
                 attain wider range of topics and resources.</p>
+                <table id='dev_tbl'>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p id='lbl_dev'>Platforms</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p className='ab_parags'>
+                                    Coder's Library also provide extended accessibility by using Apps for your devices. We, aim to widen our platform 
+                                    to provide more efficient learning for user's. Below are the available Platforms at the present, where you can choose 
+                                    and install it on your devices.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul id='ul_platforms'>
+                                    <li>
+                                        <Link to='/android' className='links'>
+                                            <div id='div_android'>
+                                                <span id='android_icon' class="material-symbols-outlined">android</span>
+                                                <p>Android</p>
+                                            </div>
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
                 <table id='dev_tbl'>
                     <tbody>
                         <tr>

@@ -6,6 +6,7 @@ import Home from './Components/jsx/Home';
 import Books from './Components/jsx/Books';
 import About from './Components/jsx/About';
 import Donate from './Components/jsx/Donate';
+import PlatformAndroid from './Components/jsx/PlatformAndroid';
 import logo from './Components/imgs/book_img.png'
 import {AnimatePresence, motion} from 'framer-motion';
 
@@ -41,6 +42,7 @@ function App() {
           <Route path='/books' component={Books} />
           <Route path='/about' component={About} />
           <Route path='/donate' component={Donate} />
+          <Route path='/android' component={PlatformAndroid} />
         </Switch>
       </AnimatePresence>
       

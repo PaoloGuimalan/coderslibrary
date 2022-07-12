@@ -118,3 +118,68 @@
     background: black;
     margin: 10px
 }
+
+#fafa_android{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 0px;
+    background: transparent;
+}
+
+#ul_platforms{
+    background-color: transparent;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 0px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+#btn_platforms{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    border: solid 1px grey;
+    border-radius: 5px;
+    background-color: #a4c639;
+    color: white;
+    cursor: pointer;
+}
+
+#div_android:hover{
+    transform: scale(1.1);
+}
+
+#div_android{
+    background-color: #a4c639;
+    width: 150px;
+    min-height: 150px;
+    border: solid 1px #acacac;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#android_icon{
+    font-size: 100px;
+    margin-bottom: -30px;
+}
