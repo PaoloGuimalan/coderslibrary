@@ -82,6 +82,12 @@ function PlatformAndroid() {
         <p id='features_statement'>
           -Like/Heart/Save a Book
         </p>
+        <p id='features_statement'>
+          -Search Books and Categories
+        </p>
+        <p id='features_statement'>
+          -Notifications and Updates
+        </p>
       </div>
       <div id='div_downloads'>
         <p id='label_features'>Downloads</p>
