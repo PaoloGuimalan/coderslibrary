@@ -56,7 +56,7 @@ function PlatformAndroid() {
           This is one of the new services Coder's Library offers. Having multiple demands of materials we had. We have 
           decided to release an App Version of our System which now, provides Account Management, Offline Mode and many 
           more. This Version of it is an Android Version where it can be installed in any device you desire that holds 
-          and Android OS from versions Android 5.0 (Lollipop) up to the latest.
+          an Android OS from versions Android 5.0 (Lollipop) up to the latest.
         </p>
       </div>
       <div id='div_statement'>
