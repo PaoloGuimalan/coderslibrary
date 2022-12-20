@@ -7,6 +7,7 @@ import {motion} from 'framer-motion';
 import {useState, useEffect} from 'react';
 import Axios from 'axios';
 import DocumentMeta from 'react-document-meta';
+import { DEFAULT_URL } from '../../configs/defaultlinks';
 
 function Books() {
 
@@ -34,7 +35,7 @@ function Books() {
     }
 
     const getter = () => {
-        Axios.get("https://coderslibraryserver.herokuapp.com/allcontents").then((response) => {
+        Axios.get(`${DEFAULT_URL}/allcontents`).then((response) => {
             if(response)
             {
                 var dat_res = response.data;
