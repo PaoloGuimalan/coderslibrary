@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/Books.css'
 import Book from '../imgs/book.png';
 import Loader_anm from './Loader';
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import {useState, useEffect} from 'react';
 import Axios from 'axios';
@@ -14,6 +14,8 @@ function Books() {
     const [sidep, setsidep] = useState(false);
     const [setter, setsetter] = useState(true);
     const [id, setid] = useState(0);
+
+    const urllistenervalue = useLocation()
 
     const [datamain, setdatamain] = useState({categories:[],books:[]});
 
@@ -89,8 +91,11 @@ function Books() {
     useEffect(() => {
         //alert(parameter());
         setid(parameter());
+    },[urllistenervalue]);
+
+    useEffect(() => {
         getter();
-    });
+    },[])
 
     const unset = (nm) => {
         //alert(nm);
