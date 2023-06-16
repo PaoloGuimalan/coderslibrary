@@ -32,7 +32,8 @@ function PlatformAndroid() {
 
   const downloadAPK = (version) => {
     if(version == 1){
-      window.open('https://github.com/PaoloGuimalan/coderslibrary_app/blob/main/productionBuild/CodersLibrary.apk?raw=true','_blank')
+//       window.open('https://github.com/PaoloGuimalan/coderslibrary_app/blob/main/productionBuild/CodersLibrary.apk?raw=true','_blank')
+      window.open('https://github.com/PaoloGuimalan/coderslibrary_app/releases/download/v1.0.1/app-release.apk','_blank')
     }
   }
 
